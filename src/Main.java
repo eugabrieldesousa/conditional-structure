@@ -1,13 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        String rosto = "sorrindo";
+        System.out.println("=== Debug Test Program ===");
 
-        if(rosto != "sorrindo") {
-            System.out.println("esta triste");
-        } else {
-            System.out.println("esta feliz");
+        int[] numeros = {10, 20, 30, 40};
+        int soma = 0;
 
+        // Loop para somar os valores do array
+        for (int i = 0; i <= numeros.length; i++) { // Bug: vai até numeros.length
+            soma += numeros[i];
+        }
+
+        System.out.println("A soma total é: " + soma);
     }
 }
-}
+
